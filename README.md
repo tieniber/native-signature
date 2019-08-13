@@ -1,5 +1,5 @@
 ## NativeSignature
-A Mendix widget for native mobile that presents a signature pad. Uses [react-native-signature-pad] (https://github.com/kevinstumpf/react-native-signature-pad)
+A Mendix widget for native mobile that presents a signature pad. Uses [react-native-signature-pad](https://github.com/kevinstumpf/react-native-signature-pad)
 
 ## Usage
 - Add an unlimited length string attribute to your context object
