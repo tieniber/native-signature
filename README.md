@@ -18,23 +18,23 @@ Here is a sample JS action to save a base64 string into a System.Image. Create a
 Then this is your code:
 
 ```js
-    // BEGIN USER CODE
-	const b64toBlob = async (b64Data) => {
-		const url = b64Data;
-		const response = await fetch(url);
-		const blob = await response.blob();
-		return blob;
-	};
+// BEGIN USER CODE
+const b64toBlob = async (b64Data) => {
+	const url = b64Data;
+	const response = await fetch(url);
+	const blob = await response.blob();
+	return blob;
+};
 
-	return new Promise (async function(resolve,reject) {
-		const blob = await b64toBlob(base64string);
-		const onSuccess = () => {
-			resolve(true);
-		}
-		const onError = () => {
-			resolve(false);
-		}
-    	mx.data.saveDocument(imageDocument.getGuid(), imageDocument.get("Name"), {}, blob, onSuccess, onError);
-	});
-	// END USER CODE
+return new Promise (async function(resolve,reject) {
+	const blob = await b64toBlob(base64string);
+	const onSuccess = () => {
+		resolve(true);
+	}
+	const onError = () => {
+		resolve(false);
+	}
+	mx.data.saveDocument(imageDocument.getGuid(), imageDocument.get("Name"), {}, blob, onSuccess, onError);
+});
+// END USER CODE
 ```
