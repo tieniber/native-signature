@@ -1,0 +1,33 @@
+{
+  "name": "nativesignature",
+  "widgetName": "NativeSignature",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "Mendix 2019",
+  "author": "Eric",
+  "config": {
+    "widgetPath": "/Volumes/[C] Windows 10/Mendix/Internal/NativeMobile80/widgets",
+    "projectPath": "/Volumes/[C] Windows 10/Mendix/Internal/NativeMobile80/"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:js:native",
+    "dev": "pluggable-widgets-tools start:js:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:js:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Eric/nativesignature/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.0.0"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "react-native-signature-pad": "^0.1.0"
+  }
+}

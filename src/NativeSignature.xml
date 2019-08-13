@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.nativesignature.NativeSignature" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Signature</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="base64attribute" type="attribute">
+                <caption>Signature attribute</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChangeAction" type="action" required="false">
+                <caption>On change</caption>
+                <description/>
+            </property>
+            <property key="onErrorAction" type="action" required="false">
+                <caption>On error</caption>
+                <description>Called when an error occurs or if a user cancels the signature input</description>
+            </property>                
+        </propertyGroup>        
+    </properties>
+</widget>
